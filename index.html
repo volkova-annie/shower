@@ -18,19 +18,16 @@
         <p>Yours Truly, Famous Inc.</p>
     </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+    <section class="slide slide-1" id="cover">
+        <h2>Планета Ellen на WebGL</h2>
+        <p>Brought to you by <a href="github.com/volkova-annie">Volkova Annie</a></p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
+            <img class="cover" src="pictures/background.png" alt="Planet board">
         </figure>
         <style>
             #cover h2 {
                 margin: 30px 0 0;
-                color: white;
+                color: #ffffff;
                 text-align: center;
                 font-size: 70px;
             }
@@ -38,36 +35,104 @@
             #cover p {
                 margin: 10px 0 0;
                 text-align: center;
-                color: white;
+                color: #ffffff;
                 font-style: italic;
                 font-size: 20px;
+                position: absolute;
+                bottom: 30px;
+                width: 100%;
+                left: 0;
             }
 
             #cover p a {
-                color: white;
+                color: #ffffff;
+            }
+
+            #cover {
+                background-color: #04062d;
+            }
+
+            #cover .cover {
+                transform: translate(-50%, -46%);
             }
         </style>
     </section>
 
     <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
+        <h2>Что такое WebGL?</h2>
+        <!-- <ol>
             <li>Built on HTML, CSS and JavaScript</li>
             <li>Works in all modern browsers</li>
             <li>Themes are separated from engine</li>
             <li>Fully keyboard accessible</li>
             <li>Printable to PDF</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p> -->
+        <div class="gpu-image-wrapper">
+            <img class="gpu-image" src="pictures/cpu-gpu.png" alt="CPU-GPU">
+        </div>
+
+        <style>
+            .gpu-image-wrapper {
+                margin-top: 75px;
+                display: flex;
+            }
+
+        </style>
     </section>
 
     <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Графический pipeline WebGL</h2>
+        <div class="columns two-three">
+            <div class="pipeline-wrapper">
+                <img class="pipeline" src="pictures/webgl_graphics_pipeline.jpg" alt="WebGL pipeline">
+            </div>
+            <ol>
+                <li>Input Assembler </li>
+                <li>Vertex shader</li>
+                <li>Primitive Assembly</li>
+                <li>Rasterizer</li>
+                <li>Fragment Shader</li>
+                <li>Output Merger </li>
+            </ol>
+        </div>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p> -->
+        <style>
+            .two-three {
+                grid-template-columns: 2fr 1fr;
+                margin-bottom: 20px;
+            }
+            .pipeline-wrapper {
+                max-height: 100%;
+                display: flex;
+            }
+            .pipeline {
+                max-height: 80%;
+                max-width: 100%;
+            }
+        </style>
+    </section>
+    <section class="slide">
+        <h2>WebGL 2d</h2>
+        <div class="board-wrapper">
+            <img class="drawing-board" src="pictures/2d.png" alt="WebGL 2d">
+        </div>
+        <style>
+            .board-wrapper {
+                display: flex;
+                justify-content: center;
+            }
+            .drawing-board {
+                max-height: 445px;
+                position: absolute;
+                bottom: 16px;
+                z-index: -1;
+            }
+        </style>
     </section>
 
     <section class="slide">
-        <h2>Two columns if you like</h2>
+        <h2>Немного капитанства про WebGL</h2>
         <div class="columns two">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
@@ -75,18 +140,10 @@
     </section>
 
     <section class="slide">
-        <h2>All kind of lists</h2>
+        <h2>Особенности WebGL</h2>
         <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
+            <li>CORS запросы</li>
+            <li>Размеры WebGL - кратны степени 2</li>
         </ol>
     </section>
 

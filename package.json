@@ -37,7 +37,7 @@
   },
   "scripts": {
     "pdf": "shower pdf",
-    "start": "shower serve",
+    "start": "shower serve -p 8081",
     "prepare": "shower prepare --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "archive": "shower archive --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
     "publish": "shower publish --files '**' --files '!{docs,node_modules,prepared}{,/**}' --files '!*.{md,toml,json}'",
