@@ -69,6 +69,22 @@
         </ol>
         <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p> -->
         <div class="gpu-image-wrapper">
+            logo js + видеокарта = картинка треугольника
+        </div>
+
+      
+    </section>
+    <section class="slide">
+        <h2>CPU vs GPU</h2>
+        <!-- <ol>
+            <li>Built on HTML, CSS and JavaScript</li>
+            <li>Works in all modern browsers</li>
+            <li>Themes are separated from engine</li>
+            <li>Fully keyboard accessible</li>
+            <li>Printable to PDF</li>
+        </ol>
+        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p> -->
+        <div class="gpu-image-wrapper">
             <img class="gpu-image" src="pictures/cpu-gpu.png" alt="CPU-GPU">
         </div>
 
@@ -82,9 +98,42 @@
     </section>
 
     <section class="slide">
+        <h2>Основные шаги</h2>
+        <div class="columns two">
+            <ul>
+                <li>Геометрия состояшая из треугольников</li>
+                <li>Говорим видеокарте, какие преобразования нужно сделать над треугольниками</li>
+                <li>И расскрашиваем их</li>
+            </ul>
+            Добавить картинку из 10го слайда парня
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Клиент-серверная модель</h2>
+        <ul>
+            <li>JavaScript code - это клиент</li>
+            <li>Видеокарта - это сервер</li>
+            <li>JavaScript code отправляет запросы на видеокарту через интерфес WebGL<br/>
+                gl.bufferData(...)<br/>
+                gl.drawElements(...)
+            </li>
+        </ul>
+        <p>Array of vertex data</p>
+        <code>
+            const vertecies = new Float32Array([
+            -0.5, -0.5, 0.0,  // Vertex 1  1.0, 0.0, 0.0 // Normal 1
+                0.5, -0.5, 0.0,  // Vertex 2  1.0, 0.0, 0.0 // Normal 2
+                0.0,  0.5, 0.0   // Vertex 3  1.0, 0.0, 0.0 // Normal 3
+            ]);
+        </code>
+    </section>
+
+    <section class="slide">
         <h2>Графический pipeline WebGL</h2>
         <div class="columns two-three">
             <div class="pipeline-wrapper">
+                Заменить картинку
                 <img class="pipeline" src="pictures/webgl_graphics_pipeline.jpg" alt="WebGL pipeline">
             </div>
             <ol>
@@ -112,6 +161,36 @@
             }
         </style>
     </section>
+
+    <section class="slide">
+        <h2>Vertex shader</h2>
+        картинка с 13 слайда
+        <code>
+            код из 12 слайда
+        </code>
+    </section>
+
+    <section class="slide">
+        <h2>
+            Растеризация
+        </h2>
+        <ul>
+            <li>GPU figures out which pixels are covered by each triangle</li>
+            <li>Interpolates vertex data to pixels along triangle surface</li>
+        </ul>
+        + картинка с 14 слайда
+    </section>
+
+    <section class="slide">
+            <h2>
+                Fragment shader
+            </h2>
+            <ul>
+                <li>Set gl_FragColor to tell WebGL the final color of a pixel</li>
+            </ul>
+            + код с 15 слайда
+        </section>
+
     <section class="slide">
         <h2>WebGL 2d</h2>
         <div class="board-wrapper">
@@ -131,13 +210,8 @@
         </style>
     </section>
 
-    <section class="slide">
-        <h2>Немного капитанства про WebGL</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
+          
+
 
     <section class="slide">
         <h2>Особенности WebGL</h2>
